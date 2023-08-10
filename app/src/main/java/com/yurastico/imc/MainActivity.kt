@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configuraIMC(imc: Double, @DrawableRes drawableId: Int, @StringRes stringId: Int) {
-        binding.tvIMC.text = getString(R.string.seu_imc,{imc.format(2)})
+        binding.tvIMC.text =  getString(R.string.seu_imc, imc.format(2))
 
         binding.ivIMCStatus.setImageDrawable(
             ContextCompat.getDrawable(this, drawableId)
